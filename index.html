@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sedonna</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="title-header">
+    <header>
+        <div class="logo">
+            <img class="header-logo" src="img/logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img  src="img/Welcome.png" alt="">
+    <img src="img/Sedona@1x.png" alt="">
+    <img src="img/Because%20the%20Grand%20%20Canyon%20sucks_@1x.png" alt="">
+</div>
+    <div class="advantages clear-fix">
+        <h2>Седона- небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, почему Седона круче, чем Гранд Каньон!</p>
+        <div class="advantage">
+            <b>Настоящий<br>городок</b>
+            <p>- #1 -</p>
+            <p>Седона - не аттракцион для туристов,<br>там течет своя жизнь<p>
+        </div>
+        <div class="advantage-img first-img">
+        </div>
+        <div class="advices">
+            <div class="advice">
+                <img src="img/first.png" alt="">
+                <b>Жилье</b>
+                <p>Рекмендуем пожить в настоящем<br> мотеле, все как в кино!</p>
+            </div>
+            <div class="advice">
+                <img src="img/second.png" alt="">
+                <b>Еда</b>
+                <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+            </div>
+            <div class="advice">
+                <img src="img/third.png" alt="">
+                <b>Сувениры</b>
+                <p>Не только китайского,<br> но и местного производства!</p>
+            </div>
+        </div>
+        <div class="advantage advantage-right">
+            <b>Там есть<br>мост дьявола</b>
+            <p>- #2 -</p>
+            <p>Да, по нему можно пройти!<br>если конечно вы осмелитесь<p>
+        </div>
+        <div class="advantage-img second-img"></div>
+        <div class="advantage-small-container clear-fix">
+            <div class="advice advantage-small">
+                <b>Небольшая<br>площадь</b>
+                <p>- #3 -</p>
+                <p>Все достопримечательности<br>находятся очень близко</p>
+            </div>
+            <div class="advice advantage-small">
+                <b>Красивая<br>дорога</b>
+                <p>- #4 -</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно! </p>
+            </div>
+            <div class="advice advantage-small">
+                <b>Мало<br>туристов</b>
+                <p>- #5 -</p>
+                <p>Большинство едет в Гранд Каньон и<br>толпится там</p>
+            </div>
+        </div>
+    </div>
+    <div class="interesting-title">
+        <b>Заинтересовались?</b>
+        <p>Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <button class="hotel-find-button">Поиск гостинницы в Седоне</button>
+    </div>
+    <div class="hotel-map-wrap">
+        <div class="map"></div>
+        <div class="hotel-form clear-fix hide">
+            <form action="/" name="hotel" method="post">
+                <div class="input-title">
+                    <label for="date-in">
+                        Дата заезда:
+                    </label>
+                    <label for="date-out">
+                        Дата выезда:
+                    </label>
+                    <label for="adult">
+                        Взрослые:
+                    </label>
+                </div>
+                <div class="inputs">
+                    <input id="date-in" type="date" name="date-in">
+                    <input id="date-out" type="date" name="date-out">
+                    <div class="people-number">
+                        <div class="minus-adult">-</div>
+                        <input id="adult" type="number" value="2" min="1" name="adult">
+                        <div class="plus-adult">+</div>
+                    </div>
+                    <label for="kids">Дети:</label>
+                    <div class="people-number">
+                        <div class="minus-kid">-</div>
+                        <input id="kids" type="number" value="0" min="0" name="kid">
+                        <div class="plus-kid">+</div>
+                    </div>
+                </div>
+                <button type="submit">Найти</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="advice">
+            <a class="site" href=""><b>#visitSedona</b></a>
+        </div>
+        <div class="advice social-link">
+            <a href=""><img src="img/t.png" alt=""></a>
+            <a href=""><img src="img/f.png" alt=""></a>
+            <a href=""><img src="img/.png" alt=""></a>
+        </div>
+        <div class="advice author">
+            <p>Website by</p>
+            <a href=""><img src="img/html.png" alt=""></a>
+        </div>
+    </footer>
+</div>
+<!--<script>-->
+    <!--var button = document.querySelector(".hotel-find-button")-->
+    <!--var popup = document.querySelector(".hotel-form")-->
+
+    <!--button.addEventListener("click", function (event) {-->
+        <!--event.preventDefault();-->
+        <!--popup.classList.remove("hide");-->
+    <!--})-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="interesting-title">
+  <b>Заинтересовались?</b>
+  <p>Укажите предполагаемые даты поездки,<br>
+    и мы покажем вам лучшие предложения гостиниц в седоне
+  </p>
+  <button>Поиск гостинницы в Седоне</button>
+</div>
+
+<div class="hotel-form">
+  <form action="/" name="hotel" method="post">
+    <div class="input-title clear-fix">
+      <label for="date-in">
+        Дата заезда:
+      </label>
+      <label for="date-out">
+        Дата выезда:
+      </label>
+      <label for="adult">
+        Взрослые:
+      </label>
+    </div>
+    <div class="inputs clear-fix">
+      <input id="date-in" type="date" name="date-in">
+      <input id="date-out" type="date" name="date-out">
+      <div class="people-number clear-fix">
+        <div>-</div>
+        <input id="adult" type="number" value="2" min="1" name="adult">
+        <div>+</div>
+      </div>
+      <label for="kids">Дети:</label>
+      <div class="people-number clear-fix">
+        <div>-</div>
+        <input id="kids" type="number" value="0" min="0" name="kid">
+        <div>+</div>
+      </div>
+    </div>
+    <button type="submit">Найти</button>
+  </form>
+</div>
+
+
+
+</body>
+</html>
